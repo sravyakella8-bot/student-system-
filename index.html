@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container" id="signupBox">
+  <h2>Student Signup</h2>
+  <input id="name" placeholder="Name">
+  <input id="roll" placeholder="Roll No">
+  <input id="course" placeholder="Course">
+  <input id="email" type="email" placeholder="Email">
+  <input id="pass" type="password" placeholder="Password">
+  <button onclick="signup()">Signup</button>
+  <p>Already have account? <a onclick="showLogin()">Login</a></p>
+</div>
+
+<div class="container" id="loginBox" style="display:none">
+  <h2>Student Login</h2>
+  <input id="lemail" type="email" placeholder="Email">
+  <input id="lpass" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+  <p>Don't have account? <a onclick="showSignup()">Signup</a></p>
+</div>
+
+<div class="container" id="dashBox" style="display:none">
+  <h2>Student Dashboard</h2>
+  <h3>Welcome <span id="dname"></span></h3>
+  <p>Roll No: <span id="droll"></span></p>
+  <p>Course: <span id="dcourse"></span></p>
+  <p>Email: <span id="demail"></span></p>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+                     </html>
